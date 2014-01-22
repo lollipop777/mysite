@@ -1,7 +1,7 @@
 {% if polls %}
     <ul>
     {% for poll in polls  %}
-        <li><a href="{% url 'polls:::detail' poll.id %}">{{poll.question}}</a></li>
+        <li><a href="{% url 'polls:detail' poll.id %}">{{poll.question}}</a></li>
     {% endfor %}
     </ul>
 {% else %}
